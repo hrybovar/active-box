@@ -1,0 +1,24 @@
+@mixin text_raleway_uppercase {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@mixin text_raleway {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+@mixin text_raleway_capitalize{
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+@mixin display-flex_jcc_tac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin width_height{
+    width: 100%;
+    height: 100vh;
+}

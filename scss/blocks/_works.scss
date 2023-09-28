@@ -1,0 +1,144 @@
+.works {
+    @include width_height;
+    margin: 250px 0 0;
+    overflow: hidden;
+}
+
+.works__subcontainer__main {
+    width: 1510px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: .5px;
+}
+
+.works__subcontainer figure {
+    position: relative;
+    figcaption{
+        color: $color_text;
+        text-transform: uppercase;
+        position: absolute;
+        top: 110px;
+        width: 378px;
+        height: 340px;
+        text-align: center;
+    }
+}
+
+
+.works__subcontainer__item {
+    background: #FF4343CC;
+    width: 378px;
+    height: 340px;
+}
+
+figure.works__subcontainer__item:hover img {
+    opacity: 0.2;
+}
+
+figure.works__subcontainer__item h5 {
+    transform: translate3d(100%, 0, 0);
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 380px;
+    text-transform: capitalize;
+}
+
+figure.works__subcontainer__item h4 {
+    transform: translate3d(100%, 0, 0);
+    width: 380px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 21px;
+    @include text_raleway_uppercase;
+}
+
+figure.works__subcontainer__item:hover h5 {
+    transform: translate3d(0, 0, 0);
+
+}
+
+figure.works__subcontainer__item:hover h4 {
+    transform: translate3d(0, 0, 0);
+}
+
+figure.works__subcontainer__item:active img {
+    opacity: 0.01;
+}
+
+@media screen and (max-width: 1024px) {
+    .works {
+        height: 460px;
+        margin-top: 0;
+    }
+
+    .works__subcontainer__main {
+        width: 1024px;
+    }
+
+    .works__subcontainer figure figcaption {
+        width: 257px;
+        height: 230px;
+        margin-top: -25px;
+    }
+
+    .works__subcontainer__item {
+        width: 257px;
+        height: 230px;
+
+        #work__photo {
+            width: 257px;
+            height: 230px;
+        }
+    }
+
+    figure.works__subcontainer__item h5 {
+        width: 258px;
+        font-size: 14px;
+    }
+
+    figure.works__subcontainer__item h4 {
+        font-size: 18px;
+        margin-left: -60px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .works {
+        margin-bottom: 0;
+        width: 100%;
+        height: 600px;
+    }
+
+    .works__subcontainer__main {
+        width: 320px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .works__subcontainer figure figcaption {
+        width: 160px;
+        height: 144px;
+    }
+
+    .works__subcontainer__item {
+        width: 160px;
+        height: 144px;
+
+        #work__photo {
+            width: 160px;
+            height: 144px;
+        }
+    }
+
+    figure.works__subcontainer__item h5 {
+        width: 160px;
+        margin-left: -8px;
+    }
+
+    figure.works__subcontainer__item h4 {
+        margin-top: -40px;
+        margin-left: -117px;
+    }
+}

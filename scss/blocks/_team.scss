@@ -1,0 +1,118 @@
+.team {
+    width: 100%;
+    height: 850px;
+    @include display-flex_jcc_tac;
+
+    .team__subcontainer {
+        width: 1170px;
+        height: 620px;
+        @include display-flex_jcc_tac;
+
+        & article {
+            margin-right: 30px;
+        }
+
+        & h4 {
+            color: #2D3033;
+            font-family: "Raleway", sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin: 30px auto 5px 0;
+        }
+
+        & p {
+            color: $color_red;
+            font-family: "Raleway", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        & h5 {
+            color: #6C7279;
+            font-family: "Raleway", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 38px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .team {
+        width: 96.8%;
+        height: 675px;
+
+        .team__subcontainer {
+            width: 984px;
+            height: 520px;
+            margin-left: 50px;
+
+            & article {
+                margin-right: 25px;
+            }
+
+            #team__person {
+                height: 227px;
+                width: 227px;
+            }
+
+            & h4 {
+                font-size: 18px;
+                margin: 25px auto 5px 0;
+            }
+
+            & p {
+                font-size: 14px;
+                margin-bottom: 23px;
+            }
+
+            & h5 {
+                font-size: 14px;
+                margin-bottom: 39px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .team {
+        width: 100%;
+        height: 100vh;
+
+        .team__subcontainer {
+            top: 0;
+            margin-top: 0;
+            width: 280px;
+            height: 521px;
+            flex-wrap: wrap;
+
+            & article {
+                margin-right: 50px;
+            }
+
+            #team__person {
+                height: 227px;
+                width: 280px;
+            }
+
+            & h4 {
+                margin: 25px 0 5px 25px;
+            }
+
+            & p {
+                margin: 0 0 38px 25px;
+            }
+
+            & h5 {
+                margin: 0 0 55px 25px;
+            }
+
+            .team__subcontainer__social {
+                margin: 0 0 49px 25px;
+            }
+        }
+    }
+}

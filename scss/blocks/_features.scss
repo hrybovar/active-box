@@ -1,0 +1,113 @@
+.features {
+    @include width_height;
+    @include display-flex_jcc_tac;
+
+    .features__subcontainer {
+        width: 1170px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 300px;
+
+        .features__item {
+            width: 370px;
+            height: 306px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px 89px 0;
+
+            & img {
+                height: 100px;
+                width: 100px;
+            }
+
+            & h4 {
+                color: #2D3033;
+                font-size: 24px;
+                font-weight: 900;
+                width: 370px;
+                margin: 30px auto 20px;
+                @include text_raleway_uppercase;
+            }
+
+            & h5 {
+                color: #6C7279;
+                font-size: 18px;
+                font-weight: 400;
+                width: 370px;
+                @include text_raleway;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .features {
+        width: 96.8%;
+
+        .features__subcontainer {
+            width: 992px;
+            margin-top: 0px;
+            display: flex;
+            justify-content: center;
+
+            .features__item {
+                width: 314px;
+                height: 237px;
+                margin: 0 0px 49px 0;
+
+                & img {
+                    height: 84px;
+                    width: 85px;
+                }
+
+                & h4 {
+                    font-size: 18px;
+                    width: 315px;
+                    margin: 23px auto 4px;
+                }
+
+                & h5 {
+                    font-size: 14px;
+                    width: 314px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .features {
+        width: 87.7%;
+        margin: 500px auto;
+
+        .features__subcontainer {
+            width: 281px;
+            flex-wrap: wrap;
+
+            .features__item {
+                width: 280px;
+                height: 222px;
+                margin-bottom: 41px;
+
+                & img {
+                    height: 74px;
+                    width: 75px;
+                }
+
+                & h4 {
+                    font-size: 18px;
+                    width: 280px;
+                    margin: 21px auto 0px;
+                }
+
+                & h5 {
+                    font-size: 14px;
+                    width: 280px;
+                }
+            }
+        }
+    }
+}
